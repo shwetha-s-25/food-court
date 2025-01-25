@@ -1,0 +1,165 @@
+:root{
+    --darkblue:#17153B;
+    --blue1: #2E236C;
+    --blue2: #433D8B;
+    --purpl: #C8ACD6;
+    --pink:#ce4e83;
+}
+
+body,h2{
+    margin:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:var(--pink);
+}
+
+.landing{
+    background-image: url(../media/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200vh;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--darkblue);
+    min-width: 120px;
+
+}
+
+header{
+    display:flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    padding:1em;
+    
+    
+}
+
+#logo{
+    flex:4;
+    font-size: 2.25em;
+    min-width: 520px;
+}
+
+nav{
+    flex:2;
+    display:flex;
+    align-items: center;
+}
+
+nav a{
+    flex:1;
+}
+
+nav a:hover{
+    color:var(--pink);
+    
+}
+
+header a i,nav a i{
+    margin-right:  .5em;
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+
+}
+
+.tagline1{
+    color:var(--blue1);
+    font-size:2.5em;
+    font-weight: bolder;
+
+}
+
+.tagline2
+{
+    color:var(--blue2);
+
+}
+
+.maintext div{
+    margin-top:.75em;
+}
+
+.maintext button{
+    width:20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding:.7em;
+    background-color: var(--blue1);
+    color: white;
+    border: 1px solid var(--blue1);
+
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(235px,1fr));
+    background: linear-gradient(to right,rgb(202, 184, 212),#b984d1);
+    color: white;
+}
+
+.menu th{
+    color: var(--pink);
+    font-size: 1.8em;;
+}
+
+#menuheading,#locheading{
+    background: linear-gradient(to right,rgb(202, 184, 212),#b984d1);
+    font-size: 2.5em;
+    padding: 2em;
+    color: var(--blue1);
+    display: flex;
+    justify-content: center;
+    
+}
+
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content:center ;
+    margin-top: .8em;
+}
+
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.locations{
+    background: linear-gradient(to right,rgb(202, 184, 212),#b984d1);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.locations h2{
+    color: var(--pink);
+    margin-bottom: .8em;
+    
+}
+.locations div{
+    flex:1;
+    padding: 1em;
+    min-width: 200px;
+}
+
+footer{
+    background-color: var(--darkblue);
+    color: white;
+    padding: .25em 1em;
+    text-align: center;
+}
